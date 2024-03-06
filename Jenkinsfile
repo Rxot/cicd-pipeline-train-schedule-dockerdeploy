@@ -1,17 +1,6 @@
 pipeline {
     agent any
-tools {
-        jdk 'JDK_11'
-    }
 
-    stages {
-        stage('Build') {
-            steps {
-                echo 'Running build automation'
-                sh './gradlew build --no-daemon'
-            }
-        }
-    }
     
 
     
